@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About This Server</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        code {
+            background: #eee;
+            padding: 2px 5px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About This HTTP Server</h1>
+        <p>This is a simple HTTP server built using Java's <code>ServerSocket</code>. It listens for incoming connections and serves static HTML files.</p>
+        <p>When a client requests <code>/About.html</code>, the server reads this file and returns it as a response.</p>
+        <p><strong>Example:</strong></p>
+        <pre>
+$ curl -v http://localhost:4221/About.html
+HTTP/1.1 200 OK
+Content-Type: text/html
+(Content of this page)
+        </pre>
+        <p>To add more pages, simply place additional HTML files in the server's root directory.</p>
+    </div>
+</body>
+</html>
