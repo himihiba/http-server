@@ -35,7 +35,7 @@
 <body>
     <div class="container">
         <h1>About This HTTP Server</h1>
-        <p>This is a simple HTTP server built using Java's <code>ServerSocket</code>. It listens for incoming connections and serves static HTML files.</p>
+        <p>This is a simple HTTP server (request/response that handle only 2 status 200 and 404) built using Java's <code>ServerSocket</code>. It listens for incoming connections and serves static HTML files.</p>
         <p>When a client requests <code>/About.html</code>, the server reads this file and returns it as a response.</p>
         <p><strong>Example:</strong></p>
         <pre>
@@ -44,7 +44,9 @@ HTTP/1.1 200 OK
 Content-Type: text/html
 (Content of this page)
         </pre>
-        <p>To add more pages, simply place additional HTML files in the server's root directory.</p>
+        <p>To add more pages, i had to simply place additional HTML files in the server's root directory.</p>
+        <p>if i want to access it in my phone simpl ipv4 replacig of localhost would do but only in my local network otherwise it need static public ip</p>
+
     </div>
 </body>
 </html>
